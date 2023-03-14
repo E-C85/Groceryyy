@@ -27,5 +27,5 @@ public class Alistirma_Grocery {
 
 
 
- ArrayList<String>Days1=new ArrayList<>(Arrays.asList("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"));
+
 }
