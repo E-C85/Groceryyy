@@ -20,4 +20,6 @@ public class Alistirma_Grocery {
     //    //     Compare all days with average earnings with for loop
     //    //      If less than average earnings, return those days.
 
+
+ ArrayList<String>Days1=new ArrayList<>(Arrays.asList("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"));
 }
