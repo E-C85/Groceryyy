@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Alistirma_Grocery {
     //
     //Task://Write a programs of a grocery store that shows all the  7 day earning of the store on a daily basis.
+    ArrayList<String>Days=new ArrayList<>(Arrays.asList("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"));
     //    //also write a method that shows the average amounth the store earns this week.
     //    //also write a method that shows which days the store earns above the average.
     //    //also write a method that shows which days the store earns below the average.
