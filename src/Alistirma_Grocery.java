@@ -33,7 +33,9 @@ public class Alistirma_Grocery {
 
 
         //    //step 4:get the average earning with the method called getAverageEarnings().   Ahmet
+        System.out.println(getAverageEarnings());
         //    //step 5:Create a method called getOrtalamaninUstundeKazancGünleri(),    Emine
+
         //    //     Compare all days with average earnings with for loop
         //    //      If higher than average earnings, return those days.
         //    //step 6:Create a method called getUnderAverageEarningDays().     Suzan
@@ -43,7 +45,16 @@ public class Alistirma_Grocery {
 
 
 
+    private static int getAverageEarnings() {
+        int average = weeklyEarning / Dailyearnings.size();
+        System.out.println("Daily average = " + average);
+        return average;
+    }
 
 
-    ArrayList<String> Days1 = new ArrayList<>(Arrays.asList("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"));
+
+
+
+
+
 }
