@@ -21,35 +21,51 @@ public class Alistirma_Grocery {
     static int weeklyEarning = 0;
 
     public static void main(String[] args) {
+        System.out.println("***************** WELCOME *************");
+
+
         int day = 0;
         while (day < 7) {
-            System.out.println("enter your daily earnings");
+            System.out.println("Enter your daily earnings");
             int earnings = scan.nextInt();
            Dailyearnings.add(earnings);
             weeklyEarning +=earnings;
             day++;
         }
-
-
-
         //    //step 4:get the average earning with the method called getAverageEarnings().   Ahmet
-        System.out.println(getAverageEarnings());
+        System.out.println("getAverageEarnings() = " + getAverageEarnings());
         //    //step 5:Create a method called getOrtalamaninUstundeKazancGünleri(),    Emine
-
         //    //     Compare all days with average earnings with for loop
         //    //      If higher than average earnings, return those days.
+        System.out.println("getoveraverageearning() = " + getoveraverageearning());
+
         //    //step 6:Create a method called getUnderAverageEarningDays().     Suzan
         //    //     Compare all days with average earnings with for loop
         //    //      If less than average earnings, return those days.
     }
 
-
-
     private static int getAverageEarnings() {
-        int average = weeklyEarning / Dailyearnings.size();
-        System.out.println("Daily average = " + average);
-        return average;
+        int Average=weeklyEarning/7;
+        return Average;
+
     }
+
+    private static String  getoveraverageearning() {
+        String overaverage=" ";
+        for (int i = 0; i <Dailyearnings.size() ; i++) {
+            if (Dailyearnings.get(i)>getAverageEarnings()){
+                overaverage+=Days.get(i) + " ";
+
+            }
+
+        }
+        return overaverage;
+    }
+
+
+
+
+
 
 
 
