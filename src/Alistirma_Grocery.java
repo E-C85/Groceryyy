@@ -40,8 +40,20 @@ public class Alistirma_Grocery {
         System.out.println("getoveraverageearning() = " + getoveraverageearning());
 
         //    //step 6:Create a method called getUnderAverageEarningDays().     Suzan
+        System.out.println("getUnderAverageEarningDays() = " + getUnderAverageEarningDays());
+
         //    //     Compare all days with average earnings with for loop
         //    //      If less than average earnings, return those days.
+    }
+
+    private static String getUnderAverageEarningDays() {
+        String underAvarage=" ";
+        for (int i = 0; i < Dailyearnings.size(); i++) {
+            if (Dailyearnings.get(i)< getAverageEarnings()){
+                underAvarage+=Days.get(i)+ " ";
+            }
+        }
+        return underAvarage;
     }
 
     private static int getAverageEarnings() {
